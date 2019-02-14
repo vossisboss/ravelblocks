@@ -1,0 +1,16 @@
+.entry-content .wp-block-jsforwpblocks-form-fields,
+.wp-block-jsforwpblocks-form-fields {
+  background: rgba(254, 243, 224, 0.52);
+  border: 5px #f7b733 solid;
+  padding: 1rem; }
+  .entry-content .wp-block-jsforwpblocks-form-fields h2,
+  .wp-block-jsforwpblocks-form-fields h2 {
+    color: #f7b733;
+    font-size: 2rem;
+    margin: 1rem 0; }
+  .entry-content .wp-block-jsforwpblocks-form-fields p,
+  .wp-block-jsforwpblocks-form-fields p {
+    font-size: 1.4rem; }
+  .entry-content .wp-block-jsforwpblocks-form-fields li,
+  .wp-block-jsforwpblocks-form-fields li {
+    list-style-position: inside; }
