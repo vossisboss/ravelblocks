@@ -5,15 +5,10 @@ const { __ } = wp.i18n;
 const { Component } = wp.element;
 const { InspectorControls, PanelColorSettings } = wp.editor;
 const {
-  CheckboxControl,
+  Button,
   PanelBody,
-  PanelRow,
-  RadioControl,
-  RangeControl,
   TextControl,
-  TextareaControl,
-  ToggleControl,
-  SelectControl
+  TextareaControl
 } = wp.components;
 
 /**
@@ -27,14 +22,8 @@ export default class Inspector extends Component {
   render() {
     const {
       attributes: {
-        checkboxControl,
-        colorPaletteControl,
-        radioControl,
-        rangeControl,
         textControl,
         textareaControl,
-        toggleControl,
-        selectControl
       },
       setAttributes
     } = this.props;
@@ -44,11 +33,25 @@ export default class Inspector extends Component {
 
         <PanelBody>
           <TextControl
-            label={__("Text Control", "ravelblocks")}
-            help={__("Text control help text", "ravelblocks")}
-            value={textControl}
-            onChange={textControl => setAttributes({ textControl })}
+            label={__("Ravelry API Username", "ravelblocks")}
+            /*value={this.state.apiUserTextControl}
+            onChange={apiUserTextControl => this.setState({ apiUserTextControl })}*/
           />
+
+          <TextControl
+            label={__("Ravelry API Password", "ravelblocks")}
+            /*value={this.state.apiPasswordTextControl}
+            onChange={textControl => this.setState({ apiPasswordTextControl })}*/
+          />
+
+          <p>
+          <a
+            href="https://www.ravelry.com/api"
+            target="_blank"
+          >
+            Instructions for getting a Ravelry API Key
+          </a>
+        </p>
         </PanelBody>
 
         

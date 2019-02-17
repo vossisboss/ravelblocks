@@ -27,6 +27,6 @@
   "dependencies": {
     "@wordpress/api-fetch": "^2.2.8",
     "axios": "^0.18.0",
-    "ravelry": "^0.3.3"
+    "ravelry": "^0.3.3",
   }
 }
