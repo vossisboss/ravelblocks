@@ -1,7 +1,9 @@
 /**
  * Block dependencies
  */
+
 import classnames from 'classnames';
+import Ravelryapi from './ravelryapi';
 import Inspector from './inspector';
 import Edit from './edit';
 import icon from './icon';
@@ -57,6 +59,7 @@ export default registerBlockType(
             const { setAttributes } = props;
 
             return [
+                <Ravelryapi {...{ setAttributes, ...props }} />,
                 <Inspector {...{ setAttributes, ...props }} />,
                 <Edit {...{ setAttributes, ...props }} />
             ];

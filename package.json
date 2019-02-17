@@ -23,5 +23,10 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.19.1",
     "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "@wordpress/api-fetch": "^2.2.8",
+    "axios": "^0.18.0",
+    "ravelry": "^0.3.3"
   }
 }

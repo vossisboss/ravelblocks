@@ -65,5 +65,3 @@ include __DIR__ . '/lib/meta-boxes.php';
 // Block Templates
 include __DIR__ . '/lib/block-templates.php';
 
-// Dynamic Blocks
-include __DIR__ . '/blocks/12-dynamic/index.php';
